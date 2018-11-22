@@ -1,0 +1,212 @@
+html {
+  font-size: 0.875em;
+}
+
+body {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 400;
+  line-height: 1.45;
+  background-color: #fefefe;
+  color: #033333;
+}
+
+p {
+  margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: 700;
+  line-height: 1.2;
+  font-family: 'Libre Franklin', sans-serif;
+  
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.157em;
+}
+
+h2 {
+  font-size: 2.369em;
+}
+
+h3 {
+  font-size: 1.777em;
+}
+
+h4 {
+  font-size: 1.333em;
+}
+
+small, .font_small {
+  font-size: 0.75em;
+}
+
+/* Some styles */
+
+header, footer, section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5em;
+}
+
+.subtitle {
+  margin-top: 0;
+}
+
+header p {
+  width: 90%;
+}
+
+main#person {
+  position: relative;
+  width: 90%;
+  border-radius: 1em;
+  left: 5%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 40%;
+}
+
+section p{
+  font-size: 1.5em;
+}
+
+section.left {
+  display: flex;
+  align-self: flex-start;
+  clear: right;
+  margin-left: 10em;
+}
+
+section.center {
+  align-self: center;
+}
+
+section.right{
+  align-self: flex-end;
+  margin-right: 10em;
+}
+
+section#actions-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 80%;
+}
+
+section#actions-list h3{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: stretch;
+}
+
+section .actions {
+  width: 25%;
+}
+
+footer #nav {
+  padding: 3em;
+}
+
+#people {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 2em;
+}
+
+.person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  border-radius: 1em;
+  font-size: 1.5em;
+}
+
+.person img {
+  padding: 0.5em;
+}
+
+.chart {
+  opacity: 0.7;
+  width: 75%;
+  height: 200px;
+}
+
+#dog {
+  height: 120px;
+  vertical-align: middle;
+  display: inline;
+  padding: 10px;
+}
+
+#hollywood {
+  height: 120px;
+}
+
+
+#blot {
+  height: 160px;
+}
+
+#trick {
+  height: 160px;
+  padding: 10px;
+}
+
+#car {
+  height: 100px;
+  vertical-align: middle;
+  display: inline;
+  padding: 10px;
+}
+
+.shadow {
+  /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+  -webkit-filter: drop-shadow( -5px -5px 5px #ccc );
+  filter: drop-shadow( -5px -5px 5px #ccc );
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 40em) {
+  html {
+    font-size: 0.675em;
+  }
+  
+  #people {
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .person {
+    width: 90%;
+    flex-basis: auto;
+    margin: 1em;
+  }
+  
+  section#actions-list {
+    flex-direction: column;
+  }
+  
+  section .actions {
+    width: 90%;
+  }
+  
+}
